@@ -2,6 +2,8 @@
     overflow: hidden;
     background-color: rgb(45, 45, 45);
     color: aqua;
+    height: 200px;
+    position: absolute;
 }
 #cubreportada{
     height: 200px; 
@@ -9,6 +11,21 @@
         top: 0;
         left: 0;
         right: 0;
-    background: linear-gradient(to right, rgba(7, 7, 7, 0.9), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(to right, rgba(7, 7, 7, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
     z-index: 100;
 }
+/*estilos de las palabras animadas de portada*/
+#word-animation {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; /* Inicialmente oculto */
+    transition: opacity 2s; /* Transición suave de opacidad */
+    z-index: 200;
+    
+  }
